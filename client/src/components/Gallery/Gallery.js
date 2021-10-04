@@ -46,14 +46,14 @@ const Gallery = () => {
           <Card.Body>
             <Card.Title class="projecttitle">SideSwipe</Card.Title>
             <Button
-              href="https://adrianauch.github.io/Delishery/"
+              href="https://thawing-mesa-73583.herokuapp.com/"
               target="_blank"
               variant="outline-primary"
             >
               Deployed App
             </Button>
             <Button
-              href="https://github.com/adrianauch/Delishery"
+              href="https://github.com/AdamKuemmel/CARS_project2"
               target="_blank"
               variant="outline-primary"
             >
@@ -94,7 +94,7 @@ const Gallery = () => {
             src={process.env.PUBLIC_URL + "/images/Notetaker.png"}
           />
           <Card.Body>
-            <Card.Title class="projecttitle">Fitness Tracker</Card.Title>
+            <Card.Title class="projecttitle">Note Taker</Card.Title>
             <Button
               href="https://afternoon-harbor-31606.herokuapp.com/"
               target="_blank"

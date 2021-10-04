@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Form, Button } from "react-bootstrap";
-import { ValidateEmail } from "";
+import "./contactform.css";
+import { validateEmail } from "../../utils/helpers";
 
 //capture First name and Last name from user input
 
@@ -12,9 +12,9 @@ const ContactForm = () => {
   //firstname and lastname
   //firstname = ""
   //;astname = ""
-  const [firstname, setFirstName] = useState("");
-  const [lastname, setLastName] = useState("");
-  const [favfood, setFavFood] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   //function is responsible for getting the value and name of the input which triggerd the change
   const handleInputChange = (e) => {
@@ -23,11 +23,11 @@ const ContactForm = () => {
     const inputType = target.name;
     const inputValue = target.value;
 
-    if (inputType === "firstname") {
-      setFirstName(inputValue);
-    } else if (inputType === "lastname") {
-      setLastName(inputValue);
-    } else setFavFood(inputValue);
+    if (inputType === "name") {
+      setName(inputValue);
+    } else if (inputType === "email") {
+      setEmail(inputValue);
+    } else setMessage(inputValue);
   };
 
   //function is responsible for submitting the user info from the form
@@ -38,39 +38,80 @@ const ContactForm = () => {
     //create a new user in our databaase, take the data we captured form handle input change that is now state,
 
     //email and passwword -- to verify for authentication
+
+    if (!validateEmail(email)) {
+      window.alert("Please enter a valid Email Address.");
+    } else {
+      setName("");
+      setEmail("");
+      setMessage("");
+      window.alert(
+        "Thank you for your message. I will get back to you within the next 24-hours."
+      );
+    }
   };
 
   //JSX land
   return (
-    <div>
-      <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control
+    <>
+      <h1>Contact Me</h1>
+      <form>
+        <div className="container mb-3">
+          <label for="exampleInputName1">Name:</label>
+          <input
+            name="name"
+            value={name}
             type="text"
-            name="firstname"
-            placeholder="Enter First Name"
+            class="form-control"
+            id="exampleInputName1"
+            aria-describedby="emailHelp"
+            onChange={handleInputChange}
+            placeholder="Enter Your Full Name"
           />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Control
+        </div>
+        <div className="container mb-3">
+          <label for="exampleInputEmail1">Email:</label>
+          <input
+            name="email"
+            value={email}
             type="text"
-            name="lastname"
-            placeholder="Enter Last Name"
+            class="form-control"
+            id="exampleInputEmail1"
+            onChange={handleInputChange}
+            placeholder="Enter Your Email Here"
           />
-        </Form.Group>
-        <Button variant="primary" type="submit" onClick={handleFormSubmit}>
-          Submit
-        </Button>
-
-        <input
-          value={favfood}
-          name="favfood"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Enter your favorite food"
-        />
-      </Form>
-    </div>
+        </div>
+        <div className="container mb-3">
+          <label for="exampleFormControlTextarea1">Message:</label>
+          <input
+            name="message"
+            value={message}
+            type="text"
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            onChange={handleInputChange}
+            placeholder="Enter Your Message Here"
+          />
+        </div>
+        <div className="container mb-3">
+          <button
+            type="submit"
+            class="text-center btn btn-primary"
+            onClick={handleFormSubmit}
+          >
+            Submit
+          </button>
+          <p>
+            Email:
+            <a href="http://www.brockatwood@gmail.com">
+              @Brockatwood@gmail.com
+            </a>
+          </p>
+          <p>Phone Number: (802)-318-6522</p>
+        </div>
+      </form>
+    </>
   );
 };
 
