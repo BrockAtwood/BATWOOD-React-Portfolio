@@ -5,12 +5,28 @@ import Footer from "./components/Footer/Footer.js";
 import Gallery from "./components/Gallery/Gallery.js";
 import ContactForm from "./components/ContactForm/ContactForm";
 import Resume from "./components/Resume/Resume.js";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <>
       <NavBar />
-      <AboutMe />
+      <Router>
+        <Switch>
+          <Route exact path={["/", "/AboutMe", "/Home"]}>
+            <AboutMe />
+          </Route>
+          <Route exact path="/Work">
+            <Gallery />
+          </Route>
+          <Route exact path="/ContactMe">
+            <ContactForm />
+          </Route>
+          <Route exact path="/Resume">
+            <Resume />
+          </Route>
+        </Switch>
+      </Router>
       <Footer />
     </>
   );
