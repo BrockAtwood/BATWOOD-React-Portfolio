@@ -20,6 +20,8 @@ You’ll use `create-react-app` to build your portfolio, which will include the 
 
 ## ScreenShot
 
+![AboutMe page](./public/images/screenshot.png)
+
 ## Delopyment links:
 
 - URL to Deployed Application: https://batwood-final-portfolio.herokuapp.com/
