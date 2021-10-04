@@ -16,7 +16,7 @@ const Gallery = () => {
           <Card.Img
             class="samesize"
             variant="top"
-            src={process.env.PUBLIC_URL + "/Images/Delishery.png"}
+            src={"/images/Delishery.png"}
           />
           <Card.Body>
             <Card.Title class="projecttitle">Delishery</Card.Title>
@@ -41,7 +41,7 @@ const Gallery = () => {
           <Card.Img
             class="samesize"
             variant="top"
-            src={process.env.PUBLIC_URL + "/Images/sideswipe.png"}
+            src={"/images/sideswipe.png"}
           />
           <Card.Body>
             <Card.Title class="projecttitle">SideSwipe</Card.Title>
@@ -66,7 +66,7 @@ const Gallery = () => {
           <Card.Img
             class="samesize"
             variant="top"
-            src={process.env.PUBLIC_URL + "/images/fitness.png"}
+            src={"/images/fitness.png"}
           />
           <Card.Body>
             <Card.Title class="projecttitle">Fitness Tracker</Card.Title>
@@ -91,7 +91,7 @@ const Gallery = () => {
           <Card.Img
             class="samesize"
             variant="top"
-            src={process.env.PUBLIC_URL + "/images/Notetaker.png"}
+            src={"/images/Notetaker.png"}
           />
           <Card.Body>
             <Card.Title class="projecttitle">Note Taker</Card.Title>
@@ -116,7 +116,7 @@ const Gallery = () => {
           <Card.Img
             class="samesize"
             variant="top"
-            src={process.env.PUBLIC_URL + "/images/workday.png"}
+            src={"/images/workday.png"}
           />
           <Card.Body>
             <Card.Title class="projecttitle">Work Day Scheduler</Card.Title>
@@ -141,7 +141,7 @@ const Gallery = () => {
           <Card.Img
             class="samesize"
             variant="top"
-            src={process.env.PUBLIC_URL + "/images/password.png"}
+            src={"/images/password.png"}
           />
           <Card.Body>
             <Card.Title class="projecttitle">Password Generator</Card.Title>

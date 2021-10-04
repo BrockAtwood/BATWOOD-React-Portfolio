@@ -7,28 +7,28 @@ export const Footer = () => {
       <div>
         <a href="http://www.brockatwood@gmail.com">
           <img
-            src={process.env.PUBLIC_URL + "/Images/Gmail logo.png"}
+            src={"/images/Gmail logo.png"}
             alt="Gmail Link"
             className="icon"
           />
         </a>
         <a href="https://github.com/BrockAtwood">
           <img
-            src={process.env.PUBLIC_URL + "/Images/GitHub Logo.png"}
+            src={"/images/GitHub Logo.png"}
             alt="Github Link"
             className="icon"
           />
         </a>
         <a href="https://www.linkedin.com/in/brock-atwood-55135210/">
           <img
-            src={process.env.PUBLIC_URL + "/Images/LinkedIn Logo.png"}
+            src={"/images/LinkedIn Logo.png"}
             alt="LinkedIn"
             className="icon"
           />
         </a>
         <a href="https://twitter.com/BrockAtwood">
           <img
-            src={process.env.PUBLIC_URL + "/Images/Twitter logo.png"}
+            src={"/images/Twitter logo.png"}
             alt="Github Link"
             className="icon"
           />
