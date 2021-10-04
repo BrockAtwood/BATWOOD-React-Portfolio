@@ -1,4 +1,8 @@
-.footer {
+.text-center {
+  padding-top: 5px;
+}
+
+.aboutme {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -6,13 +10,4 @@
   align-items: center;
   bottom: 0;
   width: 100%;
-}
-
-.icon {
-  justify-content: space-between;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  padding: 25px;
-  border: black solid 1px;
 }
