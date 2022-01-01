@@ -146,7 +146,7 @@ const Gallery = () => {
           <Card.Body>
             <Card.Title class="projecttitle">Password Generator</Card.Title>
             <Button
-              href="https://brockatwood.github.io/Batwood-Password-Generator/"
+              href="https://brockatwood.github.io/Password-Generator/"
               target="_blank"
               variant="outline-primary"
             >
