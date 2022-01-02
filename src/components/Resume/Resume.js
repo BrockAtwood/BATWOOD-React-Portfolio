@@ -5,7 +5,7 @@ function Resume() {
     <>
       <h1>
         <a
-          href="https://drive.google.com/file/d/1uonH5ZoXSxjvoFnqPisrgWti2BxHOQnv/view?usp=sharing"
+          href="https://drive.google.com/file/d/1EJJDlUtCabwtNt-49zzHn-wSR5b7-7T_/view?usp=sharing"
           alt="PDF Resume"
           target="_blank"
         >
