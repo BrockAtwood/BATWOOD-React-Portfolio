@@ -19,10 +19,10 @@ export const AboutMe = () => {
             have taught for over 9 years now in education.
           </p>
           <p className="col-3">
-            I am currently in a career change, enrolled in the Bootcamp Program
-            for Full-Stack Web-Development at CU-Denver. When I complete the
-            program, I am hoping to continue my learning and growth towards
-            Cyber-Security.
+            I currently hold a Certification from the Bootcamp Program for
+            Full-Stack Web Development at CU-Denver. I am hoping to integrate my
+            educational background with my newly acquired Web Development
+            skills.
           </p>
           <p className="col-3">
             I have developed skills involving but not limited to: HTML, CSS,
@@ -30,7 +30,7 @@ export const AboutMe = () => {
             PWA, MongoDB, Mongo Atlas, React, and MERN Stack.
           </p>
           <p className="text-center">
-            Feel free to check out some of my applications and projects on my
+            Feel free to explore some of my applications and projects on my
             Portfolio link in the top of the NavBar. As well as Contact me with
             any questions, comments or feedback on my Contact link in the
             NavBar.
